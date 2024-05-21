@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    
+    
+  }
+  
+  .flip-card {
+    
+  
+    width: 270px;
+    height: 400px;
+    perspective: 1000px;
+     ;
+
+  }
+  
+  .title {
+    font-size: 41px;
+    font-weight: 100;
+    text-align: center;
+    margin: 0;
+    font-family:Black And White Picture;
+ 
+    
+  }
+  .subtit{
+    font-size: 29px;
+    font-family: Comforter;
+  }
+ 
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(195deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    background: linear-gradient(
+      120deg,
+      rgb(29, 28, 28),
+      rgb(29, 28, 28)
+    );
+    box-shadow: 0px 3px 14px 0px goldenrod;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 3px solid goldenrod;
+    border-radius: 1rem;
+  }
+  
+  .flip-card-front {
+    background: linear-gradient(
+      120deg,
+      rgb(29, 28, 28) 85%,
+     
+      /* #E5B80b */
+    );
+    color:goldenrod;
+  }
+  
+  .flip-card-back {
+    background: linear-gradient(
+      120deg,
+      rgb(29, 28, 28),
+      rgb(29, 28, 28)
+    );
+    color:  goldenrod;
+    transform: rotateY(180deg);
+  }
+  
+  .title.title-1 {
+    font-size: 30px;
+    font-family: Protest Guerrilla
+    ;
+    
+  }
+  
+  .flip-card-back img {
+    display: block;
+    margin: 0 auto;
+  }
